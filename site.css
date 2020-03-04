@@ -43,7 +43,7 @@ nav a {
 section {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* align items to center of the container */
     align-items: center;
 }
 
@@ -62,4 +62,12 @@ section h2 {
 
 .contact {
     background: linear-gradient(to right top, #36D1DC, #5B86E5);
+}
+
+.bubble {
+    position: absolute;
+    z-index: -2; /* behind the text */
+    background: linear-gradient(to right top, #00b09b, #96c93d);
+    transform: scale(2);
+    transition: all 0.5s ease;
 }
